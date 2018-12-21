@@ -8,11 +8,17 @@ while (l < lineas)
 {
   yi = 10 * l;
   xf = 10 * (l +1);
-  dibujarLinea("red", 0 , yi, xf, 300);
-  l= l+2;
 
+  dibujarLinea("red", 300 , yi, xf, 0);
+
+  l= l+1;
 }
 
+
+dibujarLinea("red", 1,1,1,299);
+dibujarLinea("red", 1,299,299,299);
+dibujarLinea("red", 1,1,299,1);
+dibujarLinea("red", 299,1,299,299);
 
 function dibujarLinea(color, xInicial, yinicial, xFinal, yFinal)
 {
